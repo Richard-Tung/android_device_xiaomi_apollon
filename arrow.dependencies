@@ -5,12 +5,6 @@
     "remote": "github"
   },
   {
-    "repository": "ejbtrd/vendor_xiaomi",
-    "target_path": "vendor/xiaomi",
-    "remote": "github",
-    "revision": "eleven"
-  },
-  {
     "repository": "android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
