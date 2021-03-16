@@ -32,7 +32,7 @@ TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
 endif
 
 # Key for InputDispatcher to skip
-TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 97
+TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 339
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
