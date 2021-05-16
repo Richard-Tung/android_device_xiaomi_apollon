@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The ArrowOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,21 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common Fluid stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
-PRODUCT_NAME := fluid_apollo
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+DEVICE_MAINTAINER := Dobsgw
+
+PRODUCT_CHARACTERISTICS := nosdcard
+
+PRODUCT_NAME := arrow_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Mi 10T
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-IS_PHONE := true
-TARGET_INCLUDE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Ramisky \
-  ro.fluid.cpu=SDM865
